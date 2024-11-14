@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Password:"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewPrompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"/>
+
+    <!-- Result TextView -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Please enter a valid password"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:visibility="gone"
+    android:layout_alignParentEnd="true"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="391dp"
+        android:layout_height="209dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="295dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
